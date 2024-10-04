@@ -1,0 +1,26 @@
+.st-emotion-cache-12w0qpk{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #7e99ab;
+}
+
+.diagnosis {
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.diagnosis.benign {
+    background-color: #01db4b;
+}
+
+.diagnosis.malicious {
+    background-color: #ff4b4b;
+}
+
+
+.plot-container.plotly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

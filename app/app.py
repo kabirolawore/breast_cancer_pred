@@ -68,6 +68,7 @@ def add_sidebar():
 
     return input_dict
 
+
 def get_scaled_values(input_dict):
     data = get_clean_data()
 
@@ -82,6 +83,7 @@ def get_scaled_values(input_dict):
         scaled_dict[key] = scaled_value
 
     return scaled_dict
+
 
 def get_radar_chart(input_data):
     # st.write("## Radar Chart")
@@ -149,6 +151,7 @@ def get_radar_chart(input_data):
 
     return fig
 
+
 def add_predictions(input_data):
     model = pickle.load(open('../model/model.pkl', 'rb'))
     scaler = pickle.load(open('../model/scaler.pkl', 'rb'))
@@ -177,7 +180,6 @@ def add_predictions(input_data):
     st.write("Probability of being malicious: ", model.predict_proba(input_array_scaled)[0][1])
     
     st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
-
 
 
 def app():

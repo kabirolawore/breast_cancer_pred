@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 
+breast_cancer/assets/style.css
 
 
 def get_clean_data():
@@ -182,6 +183,8 @@ def add_predictions(input_data):
     st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
 
 
+# with open("/breast_cancer/assets/style.css") as f:
+
 def app():
     st.set_page_config(
         page_title="Breast Cancer Prediction",
@@ -190,7 +193,7 @@ def app():
         initial_sidebar_state="expanded"
     )
 
-    with open("../assets/style.css") as f:
+    with open("assets/style.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
     input_data = add_sidebar()

@@ -5,7 +5,6 @@ import plotly.graph_objects as go
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 
-breast_cancer/assets/style.css
 
 
 def get_clean_data():

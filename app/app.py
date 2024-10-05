@@ -9,7 +9,7 @@ import numpy as np
 
 def get_clean_data():
     # Load the data
-    data = pd.read_csv("../data/data.csv")
+    data = pd.read_csv("data/data.csv")
 
     # Clean the data
     data = data.drop(['Unnamed: 32', 'id'], axis=1)
@@ -182,7 +182,6 @@ def add_predictions(input_data):
     st.write("This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis.")
 
 
-# with open("/breast_cancer/assets/style.css") as f:
 
 def app():
     st.set_page_config(

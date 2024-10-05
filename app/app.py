@@ -153,8 +153,8 @@ def get_radar_chart(input_data):
 
 
 def add_predictions(input_data):
-    model = pickle.load(open('../model/model.pkl', 'rb'))
-    scaler = pickle.load(open('../model/scaler.pkl', 'rb'))
+    model = pickle.load(open('model/model.pkl', 'rb'))
+    scaler = pickle.load(open('model/scaler.pkl', 'rb'))
 
     # print('input_data', input_data)
     # Convert input_dict to a DataFrame with the correct feature names
